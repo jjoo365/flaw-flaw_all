@@ -1,0 +1,973 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="utf-8">
+        <title>Flaw, flaw</title>
+        <style>
+          body, h1, h2, h3, p{margin:0;}
+          header{width: 1000px; margin: auto;}
+          section{width: 1000px; margin: 0px;}     
+          h1.title{font-family: pretendard;
+                  font-size: 200px;
+                  font-weight: 900;
+                  line-height: 1;
+                  color: #2966A3;
+                  position: sticky;
+                  top: 0;
+                  background: transparent;
+                  z-index: 10;}
+          img{display: block;
+              width: 700px;
+              margin: auto;}
+          h2{font-family: pretendard;}
+          p{font-family: pretendard;}
+          nav {float: right;
+              background: #2966A3;
+              padding: 20px 0;}
+          li {list-style-type: none;}
+          ul{padding-inline-start: 0px;}
+
+          a {display: block;
+            padding: 10px 20px;
+            text-decoration: none;
+            color: black;
+            font-weight: 700;}
+
+          a:hover {background: #2966A3;
+                  color: white;
+                  transition: all 0.5s;}
+          img.artist {width: 269.5px;
+                      float: right;}
+
+          a.yt:hover {
+  background: olive;
+  color: black;
+  transition: all 0.5s;
+}
+
+html, body {
+  height: 100%;
+}
+
+footer {
+  position: relative;
+  clear: both;
+}
+        </style>
+</head>
+<body>
+  <header>
+    <div>
+    <h1 class="title">Flaw, flaw</h1>
+    <img src="flawflaw.jpg">
+    </div>
+  </header>
+
+<style>
+      #page2 {min-height: 100vh;
+              position: absolute;}
+
+.info-left {position: absolute;
+            top: 118px;
+            left: 0;
+            color: #2966A3;
+            font-family: pretendard;
+            font-weight: 900;
+            font-size: 22px;
+            line-height: 1.5;
+            opacity: 0;
+            transform: translateY(100px);
+            transition: opacity 2s ease, transform 1s ease;}
+
+.tracklist {position: relative;
+            bottom: 290px;
+            left: 135px;
+            color: #FF3E8A;
+            font-family: pretendard;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 2.2;
+            transform: rotate(45deg) translateY(100px);
+            transition: opacity 1s ease, transform 0.5s ease;
+            opacity: 0;}
+
+.info-left.show {opacity: 1;
+                transform: translateY(0);}
+
+.tracklist.show {opacity: 1;
+                transform: rotate(45deg) translateY(0);}
+
+.hand-text {
+  position: absolute;
+  color: #2966A3;
+  font-family: pretendard;
+  font-weight: 900;
+  font-size: 26px;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.hand-text.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+#page3 {min-height: 100vh;
+        position: relative;
+        width: 100%;}
+
+#page3 img {
+  display: block;
+  width: 500px;
+  position: absolute;
+  right: 0;
+  top: 126px;}
+
+.page3-text {
+  position: absolute;
+  top: 148px;
+  right: 0;
+  width: 500px;
+  color: white;
+  font-family: pretendard;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 2;
+  z-index: 10;
+  text-align: justify;}
+
+  .sidebar {cursor: url('Untitled-1.png') 16 32, auto;}
+
+  @keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+}
+
+#rabbit {
+  animation: bounce 1s ease-in-out infinite;
+}
+
+@keyframes swing {
+  0%   { transform: rotate(-3deg); }
+  50%  { transform: rotate(3deg); }
+  100% { transform: rotate(-3deg); }
+}
+
+#hammock {
+  animation: swing 1s ease-in-out infinite;
+  transform-origin: top center;
+}
+
+@keyframes spin {
+  0%   { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.spinning-text {
+  animation: spin 8s linear infinite;
+  width: 300px;
+  height: 300px;
+  margin: auto;
+}
+
+@keyframes marquee {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes float1 { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-15px)} }
+@keyframes float2 { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-25px)} }
+@keyframes float3 { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-10px)} }
+
+.lyric {
+  position: absolute;
+  color: white;
+  font-family: 지백 beta;
+  font-weight: 700;
+  font-size: 20px;
+  opacity: 0.8;
+}
+
+#brain:hover {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+@keyframes flush {
+  0%   { transform: translateY(0); opacity: 1; }
+  100% { transform: translateY(400px); opacity: 0; }
+}
+
+#toilet-text {
+  animation: flush 4s linear infinite;
+}
+  </style>
+
+  <section id="page2">
+    <div class="info-left">
+      flaw, flaw<br>
+      Jclef<br>
+      앨앤비/소울, 랩/힙합<br>
+      2018.08.14<br>
+      총 앨범 재생 시간 44:48
+    </div>
+
+    <div class="tracklist">
+      FLAW, FLAW<br>
+      꾐
+      주스 온더 락 (Feat. OHIORABBIT)<br>
+      NO ONE SEES ME LIKE YOU<br>
+      나는 생각이 너무 많아 (Feat. WONSTEIN)<br>
+      DIVE IN ISLAND<br>
+      COMBED (Feat. OHIORABBIT)<br>
+      WAT'S YOUR HOUSE FOR<br>
+      THE UNCERTAINS' CLUB (Feat. MEEGO)<br>
+      으악!<br>
+      지구 멸망 한 시간 전<br>
+      프리-퀄
+    </div>
+  </section>
+
+  <section>
+
+  <script>
+    window.addEventListener('scroll', 
+      function() {if (window.scrollY > 100) 
+      {document.querySelector('.info-left').classList.add('show');
+      document.querySelector('.tracklist').classList.add('show');}});
+  </script>
+
+<section id="page3">
+  <div class="page3-text">
+    모든 이는 '흠 (Flaw)'을 갖는다.<br>
+    그러나 모든 이들은 그러한 '모든 이'가 되는 것을 겁<br>
+    내더라. 그들은 정상, 보통이 될 수 있는 기준을 만들<br>
+    고, 그 기준에 맞지 않는 흠은 서로에게 감추고 고치<br>
+    치라며 강요한다. 사람이 사람으로서 갖는 자연스러<br>
+    운 흠, 이 자연스러움을 안아주지 못하는 것. 나는<br>
+    그것에 대해 일말의 화(火)를 가지고 있었다. 이 작<br>
+    업은 그러한 ‘화’에서 시작되었고, 모든 이가 갖고<br> 
+    있는 흠 중에서도 오롯이 내가 지니고 있는 그 흠들<br>
+    을 말하고픈 마음에서 만들어졌다. 앨범 [Flaw,<br> 
+    Flaw]는 선명한 현실에 지친 내가 흠이 있는 물건<br>
+    만을 챙겨서 떠나는 하나의 '여행'을 주제로 한다. 흠<br>
+    을 안고 떠나는 여행, 나는 그 여행에서 온전히 나를<br> 
+    안아주는 누군가를 만나 함께한다. 그러나 동시에<br> 
+    그 완벽한 동행자와의 관계 속에서 마저도 온전한<br> 
+    '나'로 살아갈 수 없음을 어려워한다. 결핍으로 가득<br> 
+    찬 나는 옳은 것, 그른 것에 대한 기준을 모두 상실<br>
+    한 채로 나와 같은 언어를 지닌 사람들과 살아가기<br>
+    로 한다.사랑스러운 사람들. 그 사람들과 함께 오롯<br>
+    이 사랑의 감정만이 남을 수 있는 세상을 구축하고<br> 
+    싶었던 나는 아이러니 하게도 유토피아 대신 허무함<br>
+    이 가득한 종말 직전을 떠올릴 뿐이었다. 이 여행의<br> 
+    이야기는 내가 갖고 있는 흠, 오롯이 그 자체의 상<br>
+    (像)과 그것이 흔들리며 그려내는 서사이다.
+  </div>
+  <img src="Group 56.png">
+</section>
+
+<style>
+.sidebar {
+  position: absolute;
+  top: 1906px;
+  left: 1000px;
+  width: 715px;
+  height: 8458px;
+  background: black;
+}
+</style>
+
+<div class="sidebar">
+  <p style="font-family: pretendard;
+            color: yellow;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 2;
+            padding: 30px;">
+    <strong style="font-size: 18px; font-weight: 1000;">Jclef — 아티스트 소개</strong><br>
+    Jclef(제이클레프)는 대한민국을 기반으로 활동하는 싱어송라이터이자 래퍼다. 본명은 허영진이며 1993년생으로, 예명 Jclef는 본명의 '영진'에서 따온 J와 음악 용어인 음자리표 'Clef'를 합친 것이다. 세상에 존재하지 않는 음자리표인 J Clef처럼, 기존에 없는 새로운 음악을 하겠다는 의미를 담고 있다. 어릴 때부터 음악이 꿈이었지만 부모의 반대로 수학과 과학을 공부하며 삼수 끝에 서강대학교 공과대학에 진학했고, 학교 음악 동아리를 통해 본격적으로 음악을 시작했다. 당시 동아리 규칙인 '래퍼는 가사를 쓴다'는 원칙이 그녀를 래퍼의 길로 이끌었다. 사운드클라우드에 음악을 올리기 시작해 2017년 첫 싱글 'multiply'를 발표했으며, 이후 쿤디판다, 창모, 사이먼 도미닉 등 국내 유명 래퍼들과 평론가들의 주목을 받으며 언더그라운드 씬에서 독보적인 존재감을 쌓아갔다. 사운드 엔지니어, 프로듀서, 디자이너, 사진작가 등으로 구성된 크루 biscuit häus(비스킷 하우스)의 멤버이기도 하다.<br><br><br>
+
+    <strong style="font-size: 18px; font-weight: 1000;">flaw, flaw — 앨범 소개</strong><br>
+    2018년 8월 14일 발매된 Jclef의 첫 번째 정규 앨범이다. 앨범의 출발점은 하나의 질문이다. 모든 사람은 저마다의 '흠(Flaw)'을 갖고 있다. 그러나 세상은 그 흠을 감추고 고치도록 강요한다. Jclef는 바로 그 자연스러운 결핍을 안아주지 못하는 세상에 대한 일말의 화(火)에서 이 앨범을 시작했다. 앨범은 흠이 있는 물건만을 챙겨 떠나는 하나의 '여행'을 주제로, 그 여행 안에서 만나는 동행자와의 관계, 그리고 그 관계 속에서도 온전한 '나'로 살아가기 어려운 감각을 섬세하게 그려낸다. 네오소울 사운드를 기반으로 한 미니멀한 프로덕션 위에 개인적인 이야기를 위화감 없이 풀어내는 작사 능력과 보컬 퍼포먼스가 맞물리며, 단순히 소비되는 음악이 아닌 사회적 메시지를 담은 독립 음악으로 높은 평가를 받았다. 음악 전문 매체 리드머에서 5점 만점에 4.5점을 기록했으며, 제16회 한국대중음악상 최우수 알앤비&소울 음반 부문을 수상했다. Jclef 본인은 수상 소감으로 "평생 받을 칭찬을 다 받은 것 같다"고 말했다.
+  </p>
+  <img src="jclef.jpg">
+
+  <div style="display: flex; gap: 20px; padding: 30px;">
+  <p style="font-family: pretendard;
+            color: yellow;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 2;
+            width: 50%;">
+    <strong style="font-size: 25px; font-weight: 1000;">DIVE IN ISLAND</strong><br><br><br><br><br><br><br>
+    우린 실체가 없을지 모를 섬을 위해<br>
+    팔을 노 삼아 젓고 헤엄쳐가네 넌<br>
+    날 무섭게 하는 속도를 가지고 있어<br>
+    난 너가 날 놓고 가고 싶어질까봐 더<br>
+    허둥지둥 팔을 젓지만 속도는 더 안나<br>
+    거봐 이 바다는 눈치가 참 빨라서 나의<br>
+    어설픈 폼새를 읽고<br>
+    틈만 나면 삼키려 들잖아<br>
+    나는 가끔 너의 손을 놓고 내 힘만으로<br>
+    헤엄을 해보면 또 어떻게 될지가<br>
+    난 궁금해<br>
+    다만 문득 너의 눈을 바라 볼 때<br>
+    호흡기까지 떼어 주고 싶어지는<br>
+    나의 맘이 걱정돼<br>
+    We dive in island<br>
+    우린 섬에서 수영해
+  </p>
+
+  <p style="font-family: pretendard;
+            color: yellow;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 2;
+            width: 50%;">
+    우린 실체가 없을지 모를 섬을 위해<br>
+    나침반도 지도도 없이 계속해<br>
+    넌 어떻게 날 위해 느리게 헤엄해<br>
+    난 너의 짐과 닻이 되어<br>
+    끌어내리지만 넌 나를 데려가네<br>
+    손잡고 파도 타는 미친 짓을 해<br>
+    내 생존은 너무나도 폐 같애<br>
+    다만 넌 데려가는 미친 짓을 해<br>
+    Feel like I'm drowning let me go oh<br>
+    Sea's gonna devour me let it do oh<br>
+    페에 차 바닷물이 더는 No<br>
+    파도 보다 심해가 궁금한 걸<br>
+    손을 놓고 말아<br>
+    나를 두고 나아가<br>
+    왜 굳이 나란 어려움과<br>
+    함께 가려 하냐고 말아<br>
+    넌 이것 보다 더<br>
+    빠르게 도착할 수도 있잖아<br>
+    예쁜 그 눈으로 내가 없다면<br>
+    아무 의미 없다<br>
+    말하지 좀 말란 말아<br>
+    그러면 내가 포기할 수 없게 되잖아<br>
+    그럼 또 살고 싶잖아 예<br>
+    그럼 또 살게 되잖아 예
+  </p>
+</div>
+
+<a href="https://www.youtube.com/watch?v=9ygI-ARlYVI" target="_blank" class="yt"
+   style="display: block; padding: 30px;">
+  <img src="https://img.youtube.com/vi/9ygI-ARlYVI/maxresdefault.jpg" 
+       style="width: 100%; display: block;">
+  <p style="color: yellow;
+             font-family: pretendard;
+             font-size: 14px;
+             font-weight: 700;
+             margin-top: 10px;">
+    ▶ DIVE IN ISLAND — Jclef (유튜브에서 듣기)
+  </p>
+</a>
+
+<div style="display: flex; gap: 20px; padding: 30px;">
+  <p style="font-family: pretendard;
+            color: yellow;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 2;
+            width: 50%;">
+    <strong style="font-size: 25px; font-weight: 1000;">주스 온더 락</strong><br><br>
+    Hey rabbit<br>
+    나의 기억에 있던 바다색은 모두<br>
+    거짓 이었나봐<br>
+    이 바다는 속내까지도<br>
+    허락 해주네<br>
+    So let us capture this Moment and<br>
+    해먹에 올라<br>
+    그물 자리를 흔들어 대면<br>
+    나를 축으로 세상이 돌아<br>
+    나를 위해 쓴 적이 없는<br>
+    눈은 오롯이 내 것 같아<br>
+    때 마침 건네 받은 메뉴 안에는<br>
+    수많은 탈출을 도모하는 작전이 많아<br>
+    (But mango passion It's enough for us right?)<br>
+    All I need is just one rock of Ice<br>
+    swimming on the juice pool yeah<br>
+    너와 난 현실을 지내지만<br>
+    산 적 없지 현재를<br>
+    취기는 잘 떠오르게 할 테지<br>
+    나와 너의 공통점을<br>
+    허나 난 뭔가에 취해<br>
+    생기는 연에 매인 적이 없지<br>
+    그저 나는 아까워 취하기를<br>
+    기다리는 찰나의 순간도<br>
+    I can't wait wait<br>
+    If you go fast I won't follow you<br>
+    유리잔에다 따라<br>
+    원색이 주는 이질감에 뿅 가자고
+  </p>
+
+  <p style="font-family: pretendard;
+            color: yellow;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 2;
+            width: 50%;">
+    유리잔에 담긴 많은 색깔들은<br>
+    단숨에 마셔도 문제 없을 거야<br>
+    아이 아이 같은 맛과 아이 같은 말을<br>
+    알아볼까 아마 문제 없을 거야 아이 아이<br>
+    우린 많은 알콜을 입에 대곤 했지<br>
+    단숨에 마시면 잃을 거야 정신을<br>
+    매일 현실을 살아도 미래를 점치는<br>
+    삶을 살았죠 우리는 그런 거야 아이 아이<br>
+    이제 확신 못할 매일의 내일 집어치워<br>
+    아침부터 해먹 위에 누워<br>
+    우리 매일을 매일처럼<br>
+    내일은 남의 일처럼 된 것처럼 말야<br>
+    외계인 돌아 돌아 돌아 가는 세상처럼<br>
+    섞어 얼음과 원색이 섞여 만든<br>
+    이 달콤한 컬러 오롯이 날 덮어<br>
+    돌아 돌아 돌아 가는 세상엔 안 섞여<br>
+    얼음을 더 섞어 쥬스 온더 락 아이 아이<br>
+    All I need is just one rock of Ice<br>
+    swimming on the juice pool yeah<br>
+    너와 나는 그저 달콤함 이면 돼<br>
+    다른 것은 빼<br>
+    빨강 노랑 주황색을 알아볼까<br>
+    말처럼 해롭지는 않을 꺼야<br>
+    아이 같은 맛 아이 같은 말을 알아 볼까<br>
+    아마 문제 없을 거야 아이 아이<br>
+    저기 저 사람들은 이야기를 이어가지<br>
+    코알라의 말로 빨강색 노랑색 주황색<br>
+    유리잔에 부어<br>
+    유리잔에다 따라<br>
+    원색이 주는 이질감에 뿅 가자고<br>
+    Yeah we go yeah we go yeah we go
+  </p>
+</div>
+
+<a href="https://www.youtube.com/watch?v=ZLDTsDU-d0A" target="_blank" class="yt"
+   style="display: block; padding: 30px;">
+  <img src="https://img.youtube.com/vi/ZLDTsDU-d0A/maxresdefault.jpg" 
+       style="width: 100%; display: block;">
+  <p style="color: yellow;
+             font-family: pretendard;
+             font-size: 14px;
+             font-weight: 700;
+             margin-top: 10px;">
+    ▶ 주스 온더 락 (Feat. OHIORABBIT) — Jclef (유튜브에서 듣기)
+  </p>
+</a>
+<a href="https://www.youtube.com/watch?v=ZLDTsDU-d0A" target="_blank" class="yt"
+   style="display: block; padding: 30px;">
+  <img src="https://img.youtube.com/vi/ZLDTsDU-d0A/maxresdefault.jpg" 
+       style="width: 100%; display: block;">
+  <p style="color: yellow; font-family: pretendard; font-size: 14px; font-weight: 700; margin-top: 10px;">
+    ▶ 주스 온더 락 (Feat. OHIORABBIT) — Jclef (유튜브에서 듣기)
+  </p>
+</a>
+
+<div style="display: flex; gap: 20px; padding: 30px;">
+  <p style="font-family: pretendard; color: yellow; font-size: 14px; font-weight: 500; line-height: 2; width: 50%;">
+    <strong style="font-size: 25px; font-weight: 1000;">나는 생각이 너무 많아</strong><br><br><br><br><br><br><br><br><br><br><br>
+    Ey ey, 나는 생각이 너무 많아<br>
+    생각의 고리는 너무 많이 돌아<br>
+    제자리로만 거듭 다시 돌아와<br>
+    알듯 말듯한 결론은 결국 달아나<br>
+    뭐든 간파하는 넌 걸음이 꽤 빨라<br>
+    뒤쳐지는 나를 위해 자꾸 돌아봐<br>
+    넌 날 낙오시키는 법이 없을 것 같아<br>
+    난 눈 안에 항상 사랑을 가득 담아<br>
+    나는 말하기를 강요받아 왔어<br>
+    너가 모르면 누가 아냐는 말이 이상 했어<br>
+    얼른 내놔라 두 어깨를 잡고 흔들어서<br>
+    나는 아무거나 짚이는 것을 토 했어<br>
+    음 이런 건 대화라 불리면 안 되는 것 아닐까<br>
+    입에 담아 튀어 오르는 대로<br>
+    그건 정말이지 휘두르지만 않는 폭력이었고<br>
+    너는 저지르는 법이 없어<br>
+    U know how to love me right<br>
+    난 언제나 말하는 것이 두려워<br>
+  </p>
+  <p style="font-family: pretendard; color: yellow; font-size: 14px; font-weight: 500; line-height: 2; width: 50%;">
+    넌 그런 내게<br>
+    그게 틀린 거라고 하지도<br>
+    생각이 느려 말이 자꾸 접질려도<br>
+    너는 절름거리는 날 향해 웃지 않아<br>
+    네게는 이상하지 않으니까 (ey ey)<br>
+    나는 생각이 너무 많아<br>
+    생각의 고리는 너무 많이 돌아<br>
+    제자리로만 거듭 다시 돌아와<br>
+    알듯 말듯한 결론은 결국 달아나<br>
+    뭐든 길이 드는 것에 넌 너무 빨라<br>
+    익숙해져 버린 나를 두고 돌아가<br>
+    아직 서투른 나는 어떡하지<br>
+    생각만 하다가 끝없이 제 자리만 맴돌아<br>
+    Ey, 어어어 어 어어어 어<br>
+    네가 내게서 떠나는 소리<br>
+    이번에도 난 여기에서 내려야겠지<br>
+    익숙하잖아 언제나 혼자 오래 걷기<br>
+    Yeah, yeah, 어어어 어 어어어 어<br>
+    상처 주지는 않겠단 소리<br>
+    하지만 그게 관통하네 나를 한 발씩<br>
+    당연하지만 운명이란 없다는 사실<br>
+    말해 왔잖아 몇 잔에 취해 always fine<br>
+    마치 내 건강을 해친 건 술이 아닌 듯이<br>
+    고마워 대신 그게 뭐야 외친 네 표정<br>
+    난 하필 지금 생각이 났지<br>
+    다시 발걸음을 돌려<br>
+    예정에 없던 일을 만들고 싶지만<br>
+    보나 마나 오히려 밑으로만 미끄러져<br>
+    월트 디즈니 's quiet 너무 늦었어<br>
+    나는 이대로 oh oh oh
+  </p>
+</div>
+
+<a href="https://www.youtube.com/watch?v=088g6y_8riI" target="_blank" class="yt"
+   style="display: block; padding: 30px;">
+  <img src="https://img.youtube.com/vi/088g6y_8riI/maxresdefault.jpg" 
+       style="width: 100%; display: block;">
+  <p style="color: yellow; font-family: pretendard; font-size: 14px; font-weight: 700; margin-top: 10px;">
+    ▶ 나는 생각이 너무 많아 — Jclef (유튜브에서 듣기)
+  </p>
+</a>
+<br><br>
+
+<div style="display: flex; gap: 20px; padding: 30px;">
+  <p style="font-family: pretendard;
+            color: yellow;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 2;
+            width: 50%;">
+    <strong style="font-size: 25px; font-weight: 1000;">WAT'S YOUR HOUSE FOR</strong><br><br><br>
+    나도 알아 이걸론 어림도 없다는 걸<br>
+    난 자꾸 네게서 도망쳐<br>
+    내 집인 네가 무너져<br>
+    집이란 네게는 어떠한 의미로 다가오니?<br>
+    나는 말야 너와 있는 시간<br>
+    어디든 내 집이 되지<br>
+    What's your house for? House for?<br>
+    커다란 집은 꿈의 목록에 없지<br>
+    다만 난 나의 너가 집이 돼 주면<br>
+    살아 갈 수가 있지<br>
+    같이 덮은 이불이<br>
+    우리의 집의 지붕이 되고<br>
+    맞댄 살로 전해지는 체온이<br>
+    나의 모닥불 이였지<br>
+    예 내게 집이 된 널 부수겠어<br>
+    망치를 들고 너를 겁줘<br>
+    하지만 이미 너는 알아<br>
+    내겐 그럴 용기가 부족한 걸 말야
+  </p>
+  <p style="font-family: pretendard;
+            color: yellow;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 2;
+            width: 50%;">
+    오 나는 항상 착각을 잘했지<br>
+    허리케인도 지진도 없지만<br>
+    이 집은 무너질 것 같지<br>
+    오 너가 나의 집이 되었을 때의<br>
+    포근함은 아주 잠시<br>
+    오 아주 작아지는 나와 달리<br>
+    거대한 너의 덩치<br>
+    난 이걸 다 후줄근한 바람이라고 착각 했어<br>
+    난 너를 내 우주라 여기고<br>
+    나만 있었으면 했어<br>
+    넌 나로 충분할 지가 나는 항상 의아 했어<br>
+    나의 불안은 애꿎은 손톱을 막 뜯어 냈어<br>
+    I can't stand any more<br>
+    역시 너의 밝은 눈은 세상을 보기 시작 했어<br>
+    나만 살던 공간에 짐 들이 차올라<br>
+    나를 몰아내고<br>
+    망치를 들고도 부술 용기가 없는 난<br>
+    널 겁주지만 너는 날 안아<br>
+    내게 집이 된 널 부수 겠어<br>
+    망치를 들고 너를 겁줘<br>
+    하지만 이미 너는 알아<br>
+    내겐 그럴 용기가 부족한 걸 말야
+  </p>
+</div>
+
+<a href="https://www.youtube.com/watch?v=eDOb0369Bpw" target="_blank" class="yt"
+   style="display: block; padding: 30px;">
+  <img src="https://img.youtube.com/vi/eDOb0369Bpw/maxresdefault.jpg" 
+       style="width: 100%; display: block;">
+  <p style="color: yellow;
+             font-family: pretendard;
+             font-size: 14px;
+             font-weight: 700;
+             margin-top: 10px;">
+    ▶ WAT'S YOUR HOUSE FOR — Jclef (유튜브에서 듣기)
+  </p>
+</a>
+<br><br><br><br><br><br>
+<div style="background: black; padding: 60px 40px;">
+  <p style="font-family: pretendard;
+             color: yellow;
+             font-size: 28px;
+             font-weight: 900;
+             line-height: 2;
+             text-align: center;">
+    '사람들이 내 음악을 듣고 찔렸으면 좋겠다.<br>
+    저 또한 당신에게 당신과 같은<br>좋은 친구가 되기를 바라며'
+  </p>
+  <p style="font-family: pretendard;
+             color: yellow;
+             font-size: 16px;
+             font-weight: 500;
+             text-align: center;
+             margin-top: 20px;">
+    — Jclef
+  </p>
+  <img src="jjjj.png" style="display: block; width: 100%; margin-top: 40px;">
+</div>
+
+</div>
+</div>
+
+  <section>
+    <h2>나와 가줄래?</h2>
+    <style>
+      h2{font-size: 50;
+        color: #012B68;
+        font-weight: 80px;
+        font-size: 65px;
+        margin-top: 70px;}
+    </style>
+
+<div style="position: relative; width: 100%;">
+  <img src="Frame 1.jpg" style="display: block; width: 100%; margin: 0; padding: 0;">
+  
+  <p class="hand-text" style="top: 5%; left: 32%; transform: rotate(-15deg);">나는 가끔 너의 손을 놓고 내 힘만으로</p>
+
+  <p class="hand-text" style="top: 14%; left: 51%; transform: rotate(20deg);">헤엄을 해보면 또 어떻게 될지가</p>
+
+  <p class="hand-text" style="top: 23%; left: 37%;">난 궁금해</p>
+
+  <p class="hand-text" style="top: 38%; left: 38%; transform: rotate(25deg);">다만 문득 너의 눈을 바라 볼 때</p>
+
+  <p class="hand-text" style="top: 46.5%; left: 15%; transform: rotate(-15deg);">호흡기까지 떼어 주고 싶어지는</p>
+
+  <p class="hand-text" style="top: 66%; left: 37%; transform: rotate(60deg);">나의 맘이 걱정돼 . . .</p>
+
+  <p class="hand-text" style="top: 71%; left: 50%; transform: rotate(60deg);">.</p>
+  <p class="hand-text" style="top: 74%; left: 46%; transform: rotate(60deg);">.</p>
+  <p class="hand-text" style="top: 77%; left: 49%; transform: rotate(60deg);">.</p>
+
+  <p class="hand-text" style="top: 89%; left: 49.5%; transform: rotate(180deg);">.<br>
+    .<br>
+    .<br>
+    .<br>
+    .<br>
+    .<br>
+  </p>
+
+  <p class="hand-text" style="top: 97.5%; left: 41%;">나와 함께 가줄래?</p>
+</div>
+
+<section id="rabbit-section" style="background: #012B68;
+                                     width: 100%;
+                                     height: 90vh;
+                                     position: relative;
+                                     padding: 0px 0;">
+  <img id="rabbit" src="rabbit.png" style="position: absolute;
+                                            top: -3%;
+                                            left: -14%;
+                                            width: 500px;
+                                            cursor: pointer;
+                                            transition: transform 1s ease, opacity 1s ease;">
+  <p style="position: absolute;
+             top: 26%;
+             left: 20%;
+             color: white;
+             font-family: 지백 beta ;
+             font-weight: 700;
+             font-size: 20px;">Hey rabbit!</p>
+
+<p style="position: absolute;
+           top: 28%;
+           left: 31%;
+           color: white;
+           font-family: 지백 beta ;
+           font-weight: 500;
+           font-size: 18px;
+           line-height: 2;">
+  나의 기억에<br>
+  있던 바다색은 모두<br>
+  거짓 이었나봐<br>
+  이 바다는<br>
+  속내까지도<br>
+  허락 해주네<br>
+  So let us capture<br>
+  this Moment and
+</p>
+</section>
+<br><br><br><br><br>
+
+<div style="background:url('ocean.png'); padding: 60px 0; text-align: center;">
+  <p style="color: white; font-family: 지백 beta ; font-weight: 600; font-size: 45px;">해먹에 올라!</p>
+  <img id="hammock" src="mok.png" style="width: 463px; margin: -88px auto; display: block;">
+</div>
+
+<div style="background:url('ocean.png'); overflow: hidden; padding: 20px 0;">
+  <p style="color: white; 
+            font-family: 지백 beta ; 
+            font-weight: 700; 
+            font-size: 20px;
+            white-space: nowrap;
+            display: inline-block;
+            animation: marquee 6s linear infinite;">
+    그물 자리를 흔들어 대면 나를 축으로 세상이 돌아 &nbsp;&nbsp;&nbsp;그물 자리를 흔들어 대면 나를 축으로 세상이 돌아 &nbsp;&nbsp;&nbsp;그물 자리를 흔들어 대면 나를 축으로 세상이 돌아 &nbsp;&nbsp;&nbsp;그물 자리를 흔들어 대면 나를 축으로 세상이 돌아 &nbsp;&nbsp;&nbsp;
+  </p>
+</div>
+<br><br><br><br><br>
+<section style="background-image: url('0.png');
+                background-size: absolute;
+                background-position: center;
+                background-attachment: fixed;
+                height: 300px;
+                display: flex;
+                align-items: center;
+                justify-content: center;">
+  <div style="background: rgba(255, 255, 255, 0.2);
+              backdrop-filter: blur(5px);
+              padding: 5px 294px;">
+    <p style="color: white;
+               font-family: 지백 beta ;
+               font-weight: 900;
+               font-size: 40px;
+               white-space: nowrap;">
+      나를 위해 쓴 적이 없는
+    </p>
+  </div>
+</section>
+<section style="background-image: url('000.png');
+                background-size: absolute;
+                background-position: center;
+                background-attachment: fixed;
+                height: 300px;
+                display: flex;
+                align-items: center;
+                justify-content: center;">
+  <div style="background: rgba(255, 255, 255, 0.2);
+              backdrop-filter: blur(5px);
+              padding: 5px 294px;">
+    <p style="color: white;
+               font-family: 지백 beta ;
+               font-weight: 900;
+               font-size: 40px;
+               white-space: nowrap;">
+      눈은 오롯이 내 것 같아
+    </p>
+  </div>
+</section>
+<br><br><br><br><br>
+</div>
+
+<section style="position: relative; 
+                height: 80vh; 
+                width: 1000px;
+                background: midnightblue;
+                display: flex;
+                align-items: center;
+                justify-content: center;">
+
+<p class="lyric" style="top:5%; left:5%; animation: float1 1.5s ease-in-out infinite;">나는 생각이 너무 많아</p>
+<p class="lyric" style="top:10%; right:10%; animation: float2 2s ease-in-out infinite;">생각의 고리는 너무 많이 돌아</p>
+<p class="lyric" style="top:15%; left:30%; animation: float3 2s ease-in-out infinite;">제자리로만 거듭 다시 돌아와</p>
+<p class="lyric" style="top:30%; right:5%; animation: float1 1s ease-in-out infinite;">알듯 말듯한 결론은 결국 달아나</p>
+<p class="lyric" style="top:40%; left:10%; animation: float2 3s ease-in-out infinite;">뭐든 간파하는 넌 걸음이 꽤 빨라</p>
+<p class="lyric" style="top:50%; left:50%; animation: float3 2s ease-in-out infinite;">난 눈 안에 항상 사랑을 가득 담아</p>
+<p class="lyric" style="top:60%; left:5%; animation: float1 2s ease-in-out infinite;">난 언제나 말하는 것이 두려워</p>
+<p class="lyric" style="top:65%; right:15%; animation: float2 2s ease-in-out infinite;">넌 그런 내게 그게 틀린 거라고 하지도</p>
+<p class="lyric" style="top:75%; left:20%; animation: float3 1.5s ease-in-out infinite;">생각이 느려 말이 자꾸 접질려도</p>
+<p class="lyric" style="top:80%; right:5%; animation: float1 1.5s ease-in-out infinite;">너는 절름거리는 날 향해 웃지 않아 </p>
+<p class="lyric" style="top:88%; left:35%; animation: float2 2.5s ease-in-out infinite;">Ey 어어어 어 어어어 어</p>
+<p class="lyric" style="top:93%; left:5%; animation: float3 1.5s ease-in-out infinite;">상처 주지는 않겠단 소리</p>
+<p class="lyric" style="top:23%; left:5%; animation: float3 1.5s ease-in-out infinite;">Ey ey, 나는 생각이 너무 많아</p>
+  </p>
+
+<img id="brain" src="brainn.png" style="width: 600px; 
+                                         position: absolute;
+                                         top: 50%;
+                                         left: 50%;
+                                         transform: translate(-50%, -50%);
+                                         z-index: 2;">
+
+<div style="position: relative; width: 1000px; height: 200px;">
+  <div style="position: absolute;
+              right: 50px;
+              top: 433px;
+              background: olive;
+              padding: 71px 82px;
+              transform: rotate(-5deg);
+              z-index: 10;
+              max-width: 600px;">
+    <p style="color: black;
+               font-family: SM3견출명조;
+               font-weight: 900;
+               font-size: 30px;
+               line-height: 1.6;
+               text-align: justify;">
+      너가 모르면 누가 아냐는 말이 이상 했어<br>
+      얼른 내놔라 두 어깨를 잡고 흔들어서<br> 
+      나는 아무거나 짚이는 것을 토 했어
+    </p>
+  </div>
+</div>
+</section>
+
+<div style="position: relative; width: 1000px; height: 600px; overflow: visible;">
+  
+  <img src="T.png" style="position: absolute;
+                            bottom: -475px;
+                            left: 100px;
+                            width: 400px;
+                            z-index: 2;">
+  
+  <div id="toilet-text" style="position: absolute;
+                                left: 120px;
+                                top: 0;
+                                z-index: 1;
+                                text-align: center;">
+    <p style="font-family: pretendard;
+               font-weight: 900;
+               font-size: 20px;
+               color: #2A639F;
+               line-height: 2;">
+      나는 아무거나 짚이는 것을 토 했어<br>
+      음 이런 건 대화라 불리면 안 되는 것<br>
+      입에 담아 튀어 오르는 대로<br>
+      그건 정말이지 휘두르지만 않는 폭력이었고<br>
+      너는 저지르는 법이 없어<br>
+      U know how to love me right
+    </p>
+  </div>
+</div>
+
+<section style="background: #002C6C;
+                width: 1000px;
+                 margin-top: 500px;">
+
+  <div style="height: 100px; background: 002C6C;"></div>
+
+  <img src="house.png" style="width: 100%; display: block;">
+
+  <div style="background: #002C6C;
+              padding: 80px 40px;
+              text-align: center;">
+    <p style="color: white;
+               font-family: 지백 beta;
+               font-weight: 900;
+               font-size: 40px;
+               line-height: 1.6;">
+      집이란 네게는 어떠한 의미로 다가오니?
+    </p>
+  </div>
+
+<section style="background-image: url('cool.png');
+                background-size: 100%;
+                background-position: center;
+                height: 700px;
+                display: flex;
+                align-items: center;
+                justify-content: center;">
+  <div style="background: rgba(255, 255, 255, 0.2);
+              backdrop-filter: blur(5px);
+              padding: 40px 60px;">
+    <p style="color: #002C6C;
+               font-family: pretendard;
+               font-weight: 900;
+               font-size: 20px;
+               line-height: 2;">
+      나는 말야 너와 있는 시간 어디든 내 집이 되지<br>
+      What's your house for? House for?<br>
+      커다란 집은 꿈의 목록에 없지<br>
+      다만 난 나의 너가 집이 돼 주면 살아 갈 수가 있지<br>
+      같이 덮은 이불이 우리의 집의 지붕이 되고<br>
+      맞댄 살로 전해지는 체온이 나의 모닥불 이였지 예
+    </p>
+  </div>
+</section>
+
+</section>
+
+
+<div id="clef-follow" style="position: fixed;
+                              pointer-events: none;
+                              font-size: 80px;
+                              color: yellow;
+                              opacity: 0;
+                              transition: opacity 0.3s ease;
+                              z-index: 9999;
+                              top: 0;
+                              left: 0;">𝄞</div>
+
+<script>
+  var clef = document.getElementById('clef-follow');
+  var sidebar = document.querySelector('.sidebar');
+  var timer;
+
+  sidebar.addEventListener('mousemove', function(e) {
+    clef.style.left = (e.clientX + 15) + 'px';
+    clef.style.top = (e.clientY - 20) + 'px';
+    clef.style.opacity = '1';
+    clearTimeout(timer);
+    timer = setTimeout(function() {
+      clef.style.opacity = '0';
+    }, 100);
+  });
+
+  sidebar.addEventListener('mouseleave', function() {
+    clearTimeout(timer);
+    clef.style.opacity = '0';
+  });
+
+  window.addEventListener('scroll', function() {
+    if (window.scrollY > 100) {
+      document.querySelector('.info-left').classList.add('show');
+      document.querySelector('.tracklist').classList.add('show');
+    }
+    document.querySelectorAll('.hand-text').forEach(function(t) {
+      var top = t.getBoundingClientRect().top;
+      if (top < window.innerHeight) {
+        t.classList.add('show');
+      }
+    });
+  });
+document.getElementById('rabbit').addEventListener('click', function() {
+  this.style.animation = 'none';
+  this.style.transition = 'transform 1s ease-in, opacity 0.3s ease 0.7s';
+  this.style.transform = 'translateY(500px) rotate(1080deg)';
+  this.style.opacity = '0';
+  setTimeout(function() {
+    window.scrollBy({top: 800, behavior: 'smooth'});
+  }, 700);
+});
+</script>
+
+<footer style="background: black; padding: 60px 40px;  width: 100%;">
+  <p style="color: #2966A3;
+             font-family: pretendard;
+             font-weight: 900;
+             font-size: 14px;
+             line-height: 2;">
+    CONTACT<br>
+    +82 010-2123-2399<br>
+    이메일hyunmibbob@gmail.com<br>
+    Seoul, Republic of Korea
+  </p>
+
+  <br>
+  <p style="color: #2966A3;
+             font-family: pretendard;
+             font-weight: 700;
+             font-size: 20px;">
+    flaw, flaw 가사 큐레이션 © 2026 현주윤. 모든 권리보유.
+  </p>
+</footer>
+
+      
+</body>
+</html>
